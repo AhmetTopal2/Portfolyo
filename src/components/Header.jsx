@@ -28,9 +28,9 @@ function Header() {
     >
       <div className="container flex items-center justify-between">
         <div>
-          <a href="/">
-            <img src={Logo} alt="logo" className="w-24 lg:w-48" />
-          </a>
+          <h1 className="font-header text-3xl font-semibold uppercase text-white">
+            My Portfolio
+          </h1>
         </div>
         <div className="hidden lg:block">
           <ul className="flex items-center">
