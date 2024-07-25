@@ -43,15 +43,7 @@ function Header() {
               </span>
               <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
             </li>
-            <li className="group pl-6">
-              <span
-                onClick={() => handleNavItemClick("#projects")}
-                className="cursor-pointer pt-0.5 font-header font-semibold uppercase text-white"
-              >
-                Why Me
-              </span>
-              <span className="block h-0.5 w-full bg-transparent group-hover:bg-yellow"></span>
-            </li>
+            
             <li className="group pl-6">
               <span
                 onClick={() => handleNavItemClick("#portfolio")}
@@ -99,7 +91,7 @@ function Header() {
                 onClick={() => handleNavItemClick("#about")}
                 className="cursor-pointer font-header font-semibold uppercase text-white"
               >
-                About
+                About Me
               </span>
             </li>
             <li className="py-2">
