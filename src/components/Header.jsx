@@ -26,7 +26,7 @@ function Header() {
         mobileMenu ? "overflow-hidden max-h-screen" : ""
       }`}
     >
-      <div className="container flex items-center justify-between">
+      <div className="container flex items-center justify-between ">
         <div>
           <h1 className="font-header text-3xl font-semibold uppercase text-white">
             My Portfolio
