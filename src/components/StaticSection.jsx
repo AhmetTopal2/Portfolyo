@@ -66,24 +66,6 @@ const StatisticsSection = () => {
                 </h4>
               </div>
             </div>
-
-            <div className="mt-6 flex flex-col items-center justify-center text-center md:mt-10 md:flex-row md:text-left lg:mt-0">
-              <div>
-                <img
-                  src={IconPuzzle}
-                  className="mx-auto h-12 w-auto md:h-20"
-                  alt="icon puzzle"
-                />
-              </div>
-              <div className="pt-5 md:pl-5 md:pt-0">
-                <h1 className="font-body text-2xl font-bold text-primary md:text-4xl">
-                  99
-                </h1>
-                <h4 className="text-grey-dark font-header text-base font-medium leading-loose md:text-xl">
-                  Bugs Fixed
-                </h4>
-              </div>
-            </div>
           </div>
         </div>
       </div>

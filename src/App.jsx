@@ -8,6 +8,7 @@ import CallToAction from "./components/CallToAction";
 import PortfolioSection from "./components/PortfolioSection";
 import HeroSection from "./components/HeroSectıon";
 
+
 const App = () => {
   return (
     <>
@@ -20,6 +21,7 @@ const App = () => {
       <StatisticsSection />
       {/* <ContactSection /> */}
       <CallToAction />
+      
     </>
   );
 };
