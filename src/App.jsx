@@ -8,20 +8,15 @@ import CallToAction from "./components/CallToAction";
 import PortfolioSection from "./components/PortfolioSection";
 import HeroSection from "./components/HeroSectıon";
 
-
 const App = () => {
   return (
     <>
       <HeroSection />
       <AboutSection />
-      {/* <ProjectsSection /> */}
       <PortfolioSection />
-      {/* <ClientsSection /> */}
       <WorkExperienceSection />
       <StatisticsSection />
-      {/* <ContactSection /> */}
       <CallToAction />
-      
     </>
   );
 };
