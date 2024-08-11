@@ -1,6 +1,7 @@
 import React from "react";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
-import cv from '../../src/CV-Ahmet-Topal.pdf'
+import cv from '../../src/CV-Ahmet-Topal.pdf';
+
 function AboutMe() {
   return (
     <div className="w-full text-center sm:w-3/4 lg:w-3/5 lg:text-left">
@@ -11,6 +12,7 @@ function AboutMe() {
       <h4 className="pt-6 font-header text-xl font-medium text-black sm:text-2xl lg:text-3xl">
         I'm Ahmet Topal, a Web Designer and Developer.
       </h4>
+
       <p className="pt-6 font-body leading-relaxed text-grey-20">
         With a background in Biology from Hacettepe University and a passion for
         web design and development, I have honed my skills through various
@@ -37,6 +39,7 @@ function AboutMe() {
         making espresso and working in cafes. In my spare time, I also follow
         American football and indulge in computer games.
       </p>
+
       <div className="flex flex-col justify-center pt-6 sm:flex-row lg:justify-start">
         <div className="flex items-center justify-center sm:justify-start">
           <p className="font-body text-lg font-semibold uppercase text-grey-20">
@@ -61,12 +64,18 @@ function AboutMe() {
             <i className="bx bxl-instagram text-2xl text-primary hover:text-yellow"></i>
           </a>
         </div>
-        <button className="bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group ml-4">
+      </div>
+
+      <div className="flex justify-center sm:justify-start mt-6">
+        <a
+          href={cv}
+          download="CV-Ahmet-Topal"
+          className="bg-red-950 text-red-400 border border-red-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group flex items-center"
+        >
           <span className="bg-red-400 shadow-red-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]"></span>
-          <a href="" download={cv}>
-            <ArrowDownwardIcon></ArrowDownwardIcon>Download CV
-          </a>
-        </button>
+          <ArrowDownwardIcon className="mr-2" />
+          Download CV
+        </a>
       </div>
     </div>
   );

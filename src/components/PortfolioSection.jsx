@@ -1,4 +1,21 @@
 import React from "react";
+import proje1 from "../assets/Project1.png";
+import proje2 from "../assets/Project2.png";
+
+const projects = [
+  {
+    id: 1,
+    image: proje1,
+    link: "https://pizza-project-h992qssl8-ahmettopal2s-projects.vercel.app",
+    alt: "Project 1",
+  },
+  {
+    id: 2,
+    image: proje2,
+    link: "https://todo-qa2e7msq1-ahmettopal2s-projects.vercel.app",
+    alt: "Project 2",
+  },
+];
 
 const PortfolioSection = () => {
   return (
@@ -11,46 +28,19 @@ const PortfolioSection = () => {
       </h3>
 
       <div className="mx-auto grid w-full grid-cols-1 gap-8 pt-12 sm:w-3/4 md:gap-10 lg:w-full lg:grid-cols-2">
-        <a
-          href="/"
-          className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-        >
-          <img
-            src='https://picsum.photos/1080/720?random=1'
-            className="w-full shadow"
-            alt="portfolio image"
-          />
-        </a>
-        <a
-          href="/"
-          className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-        >
-          <img
-            src='https://picsum.photos/1080/720?random=2'
-            className="w-full shadow"
-            alt="portfolio image"
-          />
-        </a>
-        <a
-          href="/"
-          className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-        >
-          <img
-            src='https://picsum.photos/1080/720?random=3'
-            className="w-full shadow"
-            alt="portfolio image"
-          />
-        </a>
-        <a
-          href="/"
-          className="mx-auto transform transition-all hover:scale-105 md:mx-0"
-        >
-          <img
-            src='https://picsum.photos/1080/720?random=4'
-            className="w-full shadow"
-            alt="portfolio image"
-          />
-        </a>
+        {projects.map((project) => (
+          <a
+            key={project.id}
+            href={project.link}
+            className="mx-auto transform transition-all hover:scale-105 md:mx-0"
+          >
+            <img
+              src={project.image}
+              className="w-full shadow"
+              alt={project.alt}
+            />
+          </a>
+        ))}
       </div>
     </div>
   );
